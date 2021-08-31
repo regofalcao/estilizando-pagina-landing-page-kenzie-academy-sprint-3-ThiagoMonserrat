@@ -1,4 +1,3 @@
-
 /*
 Theme Name: Landing Page Kenzie Academy
 Theme URI: https://kenzie.com.br/
@@ -7,7 +6,6 @@ Author URI: https://kenzie.com.br/
 Description: Descrção do thema.
 Version: 1.0
 Text Domain: https://kenzie.com.br/
-
 --------------------------------------------
 ESTRUTURAÇÃO BASE
 --------------------------------------------
@@ -19,7 +17,6 @@ ESTRUTURAÇÃO BASE
 **** PÁGINA INICIAL
 **** EXTRAS
 **** @MEDIA
-
 family=Montserrat -> Menus
 family=Lato -> Títulos, textos
 */
@@ -29,75 +26,380 @@ family=Lato -> Títulos, textos
 /* FONTS */
 
 /* VARIÁVEIS */
-:root{}
-  
+:root {
+}
+
 /* GERAL */
-html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    list-style: none;
+html,
+body,
+figure,
+div,
+input,
+textarea,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
 }
-img{
-    max-width: 800px;
+img {
+  max-width: 800px;
 }
-div.flex{
-    display: flex;
+div.flex {
+  display: flex;
 }
-div.full-container{
+div.full-container {
+  width: 100%;
+  max-width: 1850px;
+  margin: 0 auto;
+}
+div.large-container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+div.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+/* GERAL */
+
+/* HTML */
+html {
+}
+/* HTML */
+
+/* BODY */
+body {
+  font-family: 'Lato';
+}
+
+h2 {
+  font-family: 'Montserrat';
+}
+/* BODY */
+
+/* HEADER */
+header {
+}
+
+.large-container figure figcaption {
+  display: none;
+}
+
+/* HEADER */
+
+/* FOOTER */
+footer {
+  display: none;
+}
+/* FOOTER */
+
+/* INICIAL */
+main {
+}
+
+.secaoCursos article {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.secaoCursos article h2 {
+  font-size: 2.1875rem;
+  margin: 3rem;
+  font-weight: 700;
+}
+
+.secaoCursos article p {
+  font-size: 1.875rem;
+  margin-bottom: 6rem;
+  font-weight: 100;
+}
+
+.secaoCursos article ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.secaoCursos img {
+  max-width: 150px;
+}
+
+.secaoCursos article ul li h3 {
+  margin: 0.7rem 0 2rem 0;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.secaoCursos article ul li p {
+  font-size: 1rem;
+  margin: 2rem 0;
+  color: #818181;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.secaoCalendar {
+  text-align: center;
+}
+
+.secaoCalendar h2 {
+  font-size: 2.1875rem;
+  margin: 3rem;
+  font-weight: 700;
+}
+
+.secaoCalendar p {
+  margin: 0 1rem;
+  font-size: 1.875rem;
+  margin-bottom: 6rem;
+  font-weight: 100;
+}
+
+.secaoCalendar ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
+}
+
+.secaoCalendar ul li {
+  border: 1px solid black;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+span.calendario-data {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  background-color: #00043e;
+  color: white;
+  font-size: 3rem;
+  font-weight: 500;
+  padding: 4rem;
+}
+
+.calendario li h3 {
+  margin: 3rem;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.calendario li p {
+  font-size: 1.3125rem;
+  color: #818181;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.calendario-data-rodape span {
+  display: block;
+  font-size: 3.5rem;
+  color: #818181;
+  padding-top: 3rem;
+  border-top: 0.5px solid #c5c5c5;
+}
+
+.calendario-data-rodape button {
+  padding: 1.2rem 5.5rem;
+  background-color: #007aff;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  border: none;
+  margin: 2rem 0;
+}
+
+.secaoContato {
+  margin-top: 4rem;
+  padding-bottom: 4rem;
+  align-content: center;
+  background-color: #e6e6e6;
+  position: relative;
+  padding-top: 8rem;
+}
+
+div.flex {
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  justify-content: center;
+  position: relative;
+}
+
+.flex-col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.flex-col h2 {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 450px;
+  margin: 3rem 0;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+#nome,
+#email,
+#mensagem {
+  width: 100%;
+  margin: 5px;
+  padding: 10px 4px;
+  border: 1px solid #c5c5c5;
+  border-radius: 4px;
+}
+
+#mensagem {
+  padding-bottom: 50px;
+}
+
+.submit {
+  padding: 10px;
+  width: 4rem;
+  align-self: flex-end;
+}
+
+form div label {
+  display: none;
+}
+
+.secaoContato-informacoes p {
+  color: #818181;
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+
+.secaoContato-informacoes ul li a {
+  line-height: 3rem;
+  text-decoration: none;
+  color: #818181;
+  font-size: 1.3rem;
+}
+
+::-webkit-scrollbar {
+}
+::-webkit-scrollbar-button {
+}
+::-webkit-scrollbar-track {
+}
+::-webkit-scrollbar-track-piece {
+}
+::-webkit-scrollbar-thumb {
+}
+::-webkit-scrollbar-corner {
+}
+::-webkit-resizer {
+}
+
+@media screen and (min-width: 400px) {
+}
+
+@media screen and (min-width: 894px) {
+  .secaoCursos article ul {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    justify-content: space-between;
+    align-items: self-end;
     width: 100%;
     max-width: 1850px;
-    margin:0 auto;
-}
-div.large-container{
-    width: 100%;
-    max-width: 1170px;
-    margin:0 auto;
-}
-div.container{
+    margin: 0 auto;
+  }
+
+  .secaoCursos article ul li {
+    margin: 3rem 1rem;
+  }
+
+  .secaoCursos article ul li h3 {
+    font-size: 19px;
+  }
+
+  .secaoCursos article ul li p {
+    font-size: 15px;
+  }
+
+  .secaoCursos article ul li img {
+    max-width: 100px;
+  }
+
+  .secaoCalendar {
     width: 100%;
     max-width: 1140px;
-    margin:0 auto;
+    margin: 0 auto;
+  }
+
+  ul.calendario {
+    display: block;
+    columns: 3;
+    margin: 40px;
+  }
+
+  .calendario li p {
+    font-size: 15px;
+  }
+
+  .calendario li h3 {
+    font-size: 19px;
+  }
+  .calendario li button {
+    font-size: 32px;
+    padding: 1rem;
+  }
+
+  .calendario li span {
+    font-size: 36px;
+  }
+
+  .secaoContato {
+    font-size: 15px;
+  }
+
+  .secaoContato-informacoes ul li p,
+  a {
+    font-size: 15px;
+  }
+
+  div.flex {
+    max-width: 1875px;
+    flex-direction: row;
+  }
+
+  .flex-col {
+    margin: 2rem;
+  }
+
+  .flex-col h2 {
+    position: static;
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+
+  #email {
+    width: 49%;
+    position: absolute;
+    right: 0;
+    top: 96px;
+    margin: 0;
+  }
+  .name {
+    width: 49%;
+  }
 }
-/* GERAL */
-  
-/* HTML */
-html{}
-/* HTML */
-  
-/* BODY */
-body{}
-/* BODY */
-  
-/* HEADER */
-header{}
-/* HEADER */
-  
-/* FOOTER */
-footer{}
-/* FOOTER */
-
-/* INICIAL */
-main{}
-/* INICIAL */
-
-/* EXTRAS */
-
-/* para estilizar a scrollbar */
-::-webkit-scrollbar{}
-::-webkit-scrollbar-button{}
-::-webkit-scrollbar-track{}
-::-webkit-scrollbar-track-piece{}
-::-webkit-scrollbar-thumb{}
-::-webkit-scrollbar-corner{}
-::-webkit-resizer{}
-
-/* EXTRAS */
-  
-
-/* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
-  
-    @media screen and (min-width: 800px) {}
+.input-footer{
+    float: right;
+}
 /* MEDIA QUERIES */
